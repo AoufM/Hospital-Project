@@ -1,0 +1,22 @@
+##Main things to be completed--
+1. I have to connect all the pages to each other
+2. The inside of Cart functionality works but when the order is placed I have to collect that info in the database same goes with the doctors as well
+3. The Navbar is not functional. I have to make the links works
+4. The buttons like book now and buy now shpuld work in doctorCard page and MedicineCard pages.
+5. Also when the user clicks on the buy now button only that product should be added in  the cart right now the every product is in the cart.
+6. After logging in the user should be directed to the main page which is the doctorCard page
+
+
+##What is where-- 
+1. The CArt system includes the files:- Cart.jsx, Cart.css,ContextCart.jsx, Items.jsx,Products.jsx, Reducer.jsx
+2. For the backend there is only one file that is Firebase.jsx
+3. The doctor pages include doctorCard.jsx and DoctorCArd.css this will be the main page of the website
+4. The medicine pages include medicineCard.jsx and medicineCard.css
+5. The login and sgnup codes is in the homepage.jsx and inside the LoginForm.jsx and the SignupForm.jsx wjicj is inside the Forms folder
+6. Every Form is stored inside the Forms folder
+7. The admin part is in the Admin Part folder
+
+
+##Lastly when all this is done I need to adjust css and make website responsive
+
+

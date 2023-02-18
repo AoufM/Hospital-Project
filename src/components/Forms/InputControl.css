@@ -1,0 +1,30 @@
+
+.Icontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.Icontainer label{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #4b4a4a;
+}
+.Icontainer input{
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: 50%;
+    border: 1px solid #eee;
+    outline: none;
+    padding: 10px 15px;
+    color: #000;
+}
+
+.Icontainer input:hover{
+    border-color: #ccc;
+}
+.Icontainer input:focus{
+    border-color: #27caf3;
+}
