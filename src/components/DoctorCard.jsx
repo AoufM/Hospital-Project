@@ -13,11 +13,14 @@ import Img9 from './images/img9.jpeg';
 import Img10 from './images/img10.jpeg';
 import Img11 from './images/img11.jpeg';
 import Img12 from './images/img12.jpeg';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import Footer from './Footer';
 
 
 const DoctorCard = () => {
+   
+    
+
     const[cards]= useState([
         {
             image: <img src={Img1} alt="Doctor1" height={170} width={200}></img>,
@@ -86,9 +89,10 @@ const DoctorCard = () => {
     {/* <header>
         <Navbar/>
     </header> */}
+
     <main>
     <section>
-    <div className='container'>
+    <div className='dccontainer'>
         <h1>Our Doctors</h1>
     <div className="cards">
         {

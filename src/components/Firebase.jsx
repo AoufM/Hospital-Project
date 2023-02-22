@@ -1,5 +1,11 @@
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'firebase/auth'
+import {getAuth} from 'firebase/auth';
+import{
+  collection,
+  doc,
+  getDocs,
+  getFirestore
+} from 'firebase/firestore';
 
 
 const firebaseConfig = {
@@ -12,9 +18,34 @@ const firebaseConfig = {
   measurementId: "G-BG4JWY4B90"
 };
 
+// initializing app
 
 const app = initializeApp(firebaseConfig);
 
+// getting the authentication
 const auth= getAuth();
 
-export {app,auth};
+
+// getting the databse
+const db= getFirestore();
+
+//collection reference
+const docRef= collection(db, "doctor's appointment")
+
+// getting collection data
+
+ const showDocRef= getDocs(docRef)
+   .then((snapshot)=>{
+    let appointments= []
+    snapshot.docs.forEach((doc)=>{
+      appointments.push({ ...doc.data(), id:doc.id })
+    })
+    console.log(appointments)
+   })
+   .catch(err=>{
+    console.log(err.message)
+   })
+
+
+
+export {app,auth,db,docRef, showDocRef};

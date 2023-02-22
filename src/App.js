@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { auth } from './components/Firebase';
+// import { auth,db,docRef } from './components/Firebase';
 // import HomePage from './components/HomePage';
 // import DoctorCard from './components/DoctorCard';
 // import Navbar from './components/Navbar';
@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 // import AdminPage from './components/Admin Part/AdminPage';
 // import Articles from './components/Articles';
 // import Cart from './components/Cart';
+import MainPage from './components/MainPage';
 // import AdminLoginForm from './components/Forms/AdminLoginForm';
 // import DoctorAppointForm from './components/Forms/DoctorAppointForm';
 // import MedicinBuyForm from './components/Forms/MedicineBuyForm';
@@ -27,7 +28,8 @@ import React, { useEffect, useState } from 'react';
 
 
 function App() {
-  // the code for login and signup starts from here
+
+ // the code for login and signup starts from here
   // for it to work in need to import router dom and login form and signup form
   //    const[userName, SetUserName]= useState("");
   // useEffect(()=>{
@@ -44,21 +46,21 @@ function App() {
   return (
     <>
     {/* <Router>
-    <Switch>
-          <Route path="/LoginForm">
+    <Switch> */}
+          {/* <Route path="/LoginForm">
             <LoginForm/>
           </Route>
           <Route path="/Signup">
             <Signup />
-          </Route>
-          <Route path="/">
+          </Route> */}
+          {/* <Route path="/">
             <HomePage name={userName} />
-          </Route>
-       
-        </Switch>
+          </Route> */}
+         {/* </Switch>
     </Router> */}
     {/* the code for login and sign up ends here */}
-
+         
+        
 
 
       {/* <HomePage/> */}
@@ -72,8 +74,9 @@ function App() {
       {/* <MedicineBuyForm/> */}
       {/* <AdminLoginForm/> */}
       {/* <AdminPage/> */}
+      <MainPage/>
 
-
+         
     </>
   );
 }

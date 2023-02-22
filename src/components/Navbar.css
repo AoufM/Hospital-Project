@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
 
 
-* {
+.ncontainer{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -51,13 +51,15 @@
     cursor: pointer;
     text-decoration: none;
     transition: all 1s;
-}
+} 
 
-.right ul li a:hover {
+
+ .right ul li a:hover {
     background-color: #fff;
     border-radius: 7px;
     color: rgb(17, 97, 117);
 }
+
 
 @media screen and (max-width:805px) {
     .list {
