@@ -13,10 +13,12 @@ const MainPage = () => {
        
        
        <main>
-        <div className="welcome">
-            <h2>Welcom To Bnn Hospital</h2>
-            <p>Get help with ease now</p>
-        </div>
+       <section className='left-sec'>
+         <p></p>
+       </section>
+       <section className='right-sec'>
+
+       </section>
        </main>
         
         <footer>

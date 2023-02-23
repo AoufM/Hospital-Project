@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 // import HomePage from './components/HomePage';
 // import DoctorCard from './components/DoctorCard';
 // import Navbar from './components/Navbar';
-// import MedicineCard from './components/MedicineCard';
+import MedicineCard from './components/MedicineCard';
 // import AdminPage from './components/Admin Part/AdminPage';
 // import Articles from './components/Articles';
 // import Cart from './components/Cart';
-import MainPage from './components/MainPage';
+// import MainPage from './components/MainPage';
 // import AdminLoginForm from './components/Forms/AdminLoginForm';
 // import DoctorAppointForm from './components/Forms/DoctorAppointForm';
 // import MedicinBuyForm from './components/Forms/MedicineBuyForm';
@@ -46,17 +46,17 @@ function App() {
   return (
     <>
     {/* <Router>
-    <Switch> */}
-          {/* <Route path="/LoginForm">
+    <Switch> 
+           <Route path="/LoginForm">
             <LoginForm/>
           </Route>
           <Route path="/Signup">
             <Signup />
-          </Route> */}
-          {/* <Route path="/">
+          </Route> 
+          <Route path="/">
             <HomePage name={userName} />
-          </Route> */}
-         {/* </Switch>
+          </Route>
+          </Switch>
     </Router> */}
     {/* the code for login and sign up ends here */}
          
@@ -66,7 +66,7 @@ function App() {
       {/* <HomePage/> */}
       {/* <Navbar /> */}
       {/* <DoctorCard /> */}
-      {/* <MedicineCard /> */}
+      <MedicineCard />
       {/* <Articles /> */}
       {/* <Cart /> */}
       {/* <LoginForm/> */}
@@ -74,7 +74,7 @@ function App() {
       {/* <MedicineBuyForm/> */}
       {/* <AdminLoginForm/> */}
       {/* <AdminPage/> */}
-      <MainPage/>
+      {/* <MainPage/> */}
 
          
     </>
